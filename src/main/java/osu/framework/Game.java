@@ -1,21 +1,19 @@
 package osu.framework;
 
+import osu.framework.graphics.containers.Container;
 import osu.framework.graphics.Drawable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game extends Drawable {
-    private final List<Drawable> children = new ArrayList<>();
+public class Game extends Container {
 
     public void Add(Drawable drawable) {
-        children.add(drawable);
+        add(drawable);
     }
 
     @Override
     public void Update() {
-        for (Drawable child : children) {
-            child.Update();
-        }
+        super.Update();
     }
 
     public void Run() {
