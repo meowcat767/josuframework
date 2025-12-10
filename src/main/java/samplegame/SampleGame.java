@@ -27,6 +27,11 @@ public class SampleGame extends Game {
         tr.startValue = 0f;
         tr.endValue = 100f;
         box.addTransform(tr);
+
+        scheduler.addDelayed(() -> {
+            System.out.println("Delayed task executed!");
+            box.colour = osu.framework.graphics.Color4.White;
+        }, 500);
     }
 
     @Override

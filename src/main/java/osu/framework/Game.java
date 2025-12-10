@@ -2,10 +2,12 @@ package osu.framework;
 
 import osu.framework.graphics.containers.Container;
 import osu.framework.graphics.Drawable;
+import osu.framework.threading.Scheduler;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Game extends Container {
+    public Scheduler scheduler = new Scheduler();
 
     public void Add(Drawable drawable) {
         add(drawable);
@@ -13,6 +15,7 @@ public class Game extends Container {
 
     @Override
     public void Update() {
+        scheduler.update();
         super.Update();
     }
 

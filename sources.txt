@@ -1,4 +1,5 @@
 src/main/java/samplegame/SampleGame.java
+src/main/java/osu/framework/threading/Scheduler.java
 src/main/java/osu/framework/Time.java
 src/main/java/osu/framework/graphics/transforms/Transformable.java
 src/main/java/osu/framework/graphics/transforms/TransformRotation.java
