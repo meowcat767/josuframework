@@ -2,8 +2,9 @@ package osu.framework.graphics;
 
 import osu.framework.math.Vector2;
 import osu.framework.graphics.containers.CompositeDrawable;
+import osu.framework.graphics.transforms.Transformable;
 
-public class Drawable {
+public class Drawable extends Transformable {
     public Anchor anchor = Anchor.TopLeft;
     public Anchor origin = Anchor.TopLeft;
     public Vector2 size = new Vector2();
@@ -18,7 +19,7 @@ public class Drawable {
     public boolean isLoaded;
 
     public void Update() {
-        // Default implementation
+        updateTransforms();
     }
 
     public void load(Object clock, Object dependencies) {

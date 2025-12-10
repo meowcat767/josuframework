@@ -21,10 +21,12 @@ public class Game extends Container {
         injectDependencies(this);
 
         // Simulate loop for now
-        long lastTime = System.nanoTime();
+        long startTime = System.nanoTime();
+        long lastTime = startTime;
         for (int i = 0; i < 100; i++) { // Run 100 frames
             long currentTime = System.nanoTime();
             Time.Elapsed = (currentTime - lastTime) / 1000000.0; // ms
+            Time.Current = (currentTime - startTime) / 1000000.0; // ms
             lastTime = currentTime;
             Update();
             try {
