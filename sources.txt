@@ -1,0 +1,11 @@
+src/main/java/samplegame/SampleGame.java
+src/main/java/osu/framework/Time.java
+src/main/java/osu/framework/graphics/shapes/Shape.java
+src/main/java/osu/framework/graphics/shapes/Box.java
+src/main/java/osu/framework/graphics/Drawable.java
+src/main/java/osu/framework/graphics/Anchor.java
+src/main/java/osu/framework/graphics/Color4.java
+src/main/java/osu/framework/math/Vector2.java
+src/main/java/osu/framework/allocation/BackgroundDependencyLoader.java
+src/main/java/osu/framework/allocation/DependencyContainer.java
+src/main/java/osu/framework/Game.java
