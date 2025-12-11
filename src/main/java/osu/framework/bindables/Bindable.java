@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-public class Bindable<T> {
+public class Bindable<T> implements IBindable<T> {
     private T value;
     private T defaultValue;
     private boolean disabled;
@@ -128,5 +128,17 @@ public class Bindable<T> {
     private void setDisabledInternal(boolean newDisabled, Bindable<T> source) {
         this.disabled = newDisabled;
         triggerDisabledChange(newDisabled, source);
+    }
+
+    @Override
+    public void unbindAll() {
+        bindings.clear();
+        valueChangedListeners.clear();
+        disabledChangedListeners.clear();
+    }
+
+    @Override
+    public IBindable<T> getUnboundCopy() {
+        return new Bindable<>(this.value);
     }
 }

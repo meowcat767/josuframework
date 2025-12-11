@@ -22,7 +22,8 @@ public class Drawable extends Transformable {
         updateTransforms();
     }
 
-    public void load(Object clock, Object dependencies) {
+    public void load(osu.framework.allocation.DependencyContainer dependencies) {
+        dependencies.inject(this);
         isLoaded = true;
     }
 
