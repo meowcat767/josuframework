@@ -1,36 +1,36 @@
 package osu.framework.bindables;
 
 /**
- * A bindable for integer values with min/max constraints.
+ * A bindable for long values with min/max constraints.
  */
-public class BindableInt extends Bindable<Integer> {
-    private Integer minValue;
-    private Integer maxValue;
+public class BindableLong extends Bindable<Long> {
+    private Long minValue;
+    private Long maxValue;
 
-    public BindableInt(int defaultValue) {
+    public BindableLong(long defaultValue) {
         super(defaultValue);
     }
 
-    public BindableInt() {
-        super(0);
+    public BindableLong() {
+        super(0L);
     }
 
-    public Integer getMinValue() {
+    public Long getMinValue() {
         return minValue;
     }
 
-    public void setMinValue(Integer minValue) {
+    public void setMinValue(Long minValue) {
         this.minValue = minValue;
         if (getValue() != null && minValue != null && getValue() < minValue) {
             setValue(minValue);
         }
     }
 
-    public Integer getMaxValue() {
+    public Long getMaxValue() {
         return maxValue;
     }
 
-    public void setMaxValue(Integer maxValue) {
+    public void setMaxValue(Long maxValue) {
         this.maxValue = maxValue;
         if (getValue() != null && maxValue != null && getValue() > maxValue) {
             setValue(maxValue);
@@ -38,7 +38,7 @@ public class BindableInt extends Bindable<Integer> {
     }
 
     @Override
-    public void setValue(Integer value) {
+    public void setValue(Long value) {
         if (value != null) {
             if (minValue != null && value < minValue) {
                 value = minValue;
@@ -50,23 +50,20 @@ public class BindableInt extends Bindable<Integer> {
         super.setValue(value);
     }
 
-    /**
-     * Adds a value to the current value.
-     */
-    public void add(int value) {
+    public void add(long value) {
         setValue(getValue() + value);
     }
 
     @Override
-    protected Bindable<Integer> createInstance() {
-        return new BindableInt();
+    protected Bindable<Long> createInstance() {
+        return new BindableLong();
     }
 
     @Override
-    protected void copyTo(Bindable<Integer> them) {
+    protected void copyTo(Bindable<Long> them) {
         super.copyTo(them);
-        if (them instanceof BindableInt) {
-            BindableInt other = (BindableInt) them;
+        if (them instanceof BindableLong) {
+            BindableLong other = (BindableLong) them;
             other.minValue = this.minValue;
             other.maxValue = this.maxValue;
         }

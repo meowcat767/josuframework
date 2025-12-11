@@ -1,67 +1,64 @@
 package osu.framework.bindables;
 
 /**
- * A bindable for double values with min/max/precision constraints.
+ * A bindable for float values with min/max/precision constraints.
  */
-public class BindableDouble extends Bindable<Double> {
-    private Double minValue;
-    private Double maxValue;
-    private Double precision = Double.MIN_VALUE; // Epsilon
+public class BindableFloat extends Bindable<Float> {
+    private Float minValue;
+    private Float maxValue;
+    private Float precision = Float.MIN_VALUE; // Epsilon
 
-    public BindableDouble(double defaultValue) {
+    public BindableFloat(float defaultValue) {
         super(defaultValue);
     }
 
-    public BindableDouble() {
-        super(0.0);
+    public BindableFloat() {
+        super(0.0f);
     }
 
-    public Double getMinValue() {
+    public Float getMinValue() {
         return minValue;
     }
 
-    public void setMinValue(Double minValue) {
+    public void setMinValue(Float minValue) {
         this.minValue = minValue;
         if (getValue() != null && minValue != null && getValue() < minValue) {
             setValue(minValue);
         }
     }
 
-    public Double getMaxValue() {
+    public Float getMaxValue() {
         return maxValue;
     }
 
-    public void setMaxValue(Double maxValue) {
+    public void setMaxValue(Float maxValue) {
         this.maxValue = maxValue;
         if (getValue() != null && maxValue != null && getValue() > maxValue) {
             setValue(maxValue);
         }
     }
 
-    public Double getPrecision() {
+    public Float getPrecision() {
         return precision;
     }
 
-    public void setPrecision(Double precision) {
+    public void setPrecision(Float precision) {
         if (precision != null && precision <= 0) {
             throw new IllegalArgumentException("Precision must be greater than 0");
         }
         this.precision = precision;
-        // Re-apply current value with new precision
         if (getValue() != null) {
             setValue(getValue());
         }
     }
 
     @Override
-    public void setValue(Double value) {
+    public void setValue(Float value) {
         if (value != null) {
-            // Apply precision rounding
             if (precision != null && precision > 0) {
                 value = Math.round(value / precision) * precision;
             }
 
-            // Apply clamping
             if (minValue != null && value < minValue) {
                 value = minValue;
             }
@@ -72,23 +69,20 @@ public class BindableDouble extends Bindable<Double> {
         super.setValue(value);
     }
 
-    /**
-     * Adds a value to the current value.
-     */
-    public void add(double value) {
+    public void add(float value) {
         setValue(getValue() + value);
     }
 
     @Override
-    protected Bindable<Double> createInstance() {
-        return new BindableDouble();
+    protected Bindable<Float> createInstance() {
+        return new BindableFloat();
     }
 
     @Override
-    protected void copyTo(Bindable<Double> them) {
+    protected void copyTo(Bindable<Float> them) {
         super.copyTo(them);
-        if (them instanceof BindableDouble) {
-            BindableDouble other = (BindableDouble) them;
+        if (them instanceof BindableFloat) {
+            BindableFloat other = (BindableFloat) them;
             other.minValue = this.minValue;
             other.maxValue = this.maxValue;
             other.precision = this.precision;
