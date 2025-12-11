@@ -1,10 +1,11 @@
 package osu.framework.graphics;
 
+import osu.framework.allocation.IDependencyInjectionCandidate;
 import osu.framework.math.Vector2;
 import osu.framework.graphics.containers.CompositeDrawable;
 import osu.framework.graphics.transforms.Transformable;
 
-public class Drawable extends Transformable {
+public class Drawable extends Transformable implements IDependencyInjectionCandidate {
     public Anchor anchor = Anchor.TopLeft;
     public Anchor origin = Anchor.TopLeft;
     public Vector2 size = new Vector2();
