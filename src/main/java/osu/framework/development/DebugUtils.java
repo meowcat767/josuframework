@@ -3,7 +3,7 @@ package osu.framework.development;
 import java.lang.management.ManagementFactory;
 import java.lang.reflect.Method;
 import java.util.Arrays;
-import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Test;
 import osu.framework.timing.IClock;
 
 public final class DebugUtils {
