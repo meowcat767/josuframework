@@ -1,0 +1,13 @@
+
+> Task :compileJava
+Note: /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/bindables/Bindable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :processResources NO-SOURCE
+> Task :classes
+
+[Incubating] Problems report is available at: file:///run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.0/userguide/configuration_cache_enabling.html

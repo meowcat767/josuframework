@@ -20,11 +20,11 @@ public class AggregateBindable<T> {
      * 
      * @param aggregateFunction The function to combine values (e.g., (a, b) -> a *
      *                          b for multiplication).
-     * @param initialValue      The initial value for the result.
+     * @param result            The result bindable.
      */
-    public AggregateBindable(BiFunction<T, T, T> aggregateFunction, T initialValue) {
+    public AggregateBindable(BiFunction<T, T, T> aggregateFunction, IBindable<T> result) {
         this.aggregateFunction = aggregateFunction;
-        this.result = new Bindable<>(initialValue);
+        this.result = (Bindable<T>) result;
     }
 
     /**

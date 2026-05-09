@@ -8,6 +8,8 @@ package osu.framework.bindables;
 public class BindableNumber<T extends Number> extends Bindable<T> {
     private T minValue;
     private T maxValue;
+    private T defaultValue;
+
 
     public BindableNumber(T defaultValue) {
         super(defaultValue);
@@ -21,9 +23,28 @@ public class BindableNumber<T extends Number> extends Bindable<T> {
         return minValue;
     }
 
+    public T getDefaultValue() {
+        return defaultValue;
+    }
+
+    public void setDefaultValue(T defaultValue) {
+        this.defaultValue = defaultValue;
+    }
+
+    public T get() {
+        return getValue();
+    }
+
+    public void set(T value) {
+        setValue(value);
+    }
+
+
     public void setMinValue(T minValue) {
         this.minValue = minValue;
-        // Could add validation here to clamp current value
+        if (getValue() != null && minValue != null && getValue().doubleValue() < minValue.doubleValue()) {
+            setValue(minValue);
+        }
     }
 
     public T getMaxValue() {
@@ -32,7 +53,9 @@ public class BindableNumber<T extends Number> extends Bindable<T> {
 
     public void setMaxValue(T maxValue) {
         this.maxValue = maxValue;
-        // Could add validation here to clamp current value
+        if (getValue() != null && maxValue != null && getValue().doubleValue() > maxValue.doubleValue()) {
+            setValue(maxValue);
+        }
     }
 
     @Override

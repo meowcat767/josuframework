@@ -1,0 +1,287 @@
+
+> Task :compileJava
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:44: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+        return getAdjustments().getVolume();
+                                         ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:49: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+        return getAdjustments().getBalance();
+                                          ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:54: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+        return getAdjustments().getFrequency();
+                                            ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:59: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+        return getAdjustments().getTempo();
+                                        ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:7: error: AudioAdjustments is not abstract and does not override abstract method getTempo() in IAdjustableAudioComponent
+public class AudioAdjustments implements IAdjustableAudioComponent {
+       ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:167: error: getTempo() in AudioAdjustments cannot implement getTempo() in IAdjustableAudioComponent
+    public BindableDouble getTempo() {
+                          ^
+  return type BindableDouble is not compatible with BindableNumber<Double>
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:163: error: getFrequency() in AudioAdjustments cannot implement getFrequency() in IAdjustableAudioComponent
+    public BindableDouble getFrequency() {
+                          ^
+  return type BindableDouble is not compatible with BindableNumber<Double>
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:159: error: getBalance() in AudioAdjustments cannot implement getBalance() in IAdjustableAudioComponent
+    public BindableDouble getBalance() {
+                          ^
+  return type BindableDouble is not compatible with BindableNumber<Double>
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:155: error: getVolume() in AudioAdjustments cannot implement getVolume() in IAdjustableAudioComponent
+    public BindableDouble getVolume() {
+                          ^
+  return type BindableDouble is not compatible with BindableNumber<Double>
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:114: error: getAggregate(AdjustableProperty) in AudioAdjustments cannot implement getAggregate(AdjustableProperty) in IAggregateAudioAdjustment
+    private AggregateBindable<Double> getAggregate(
+                                      ^
+  attempting to assign weaker access privileges; was public
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:33: error: method setDefault in class Bindable<T> cannot be applied to given types;
+        volume.setDefault(1.0);
+              ^
+  required: no arguments
+  found:    double
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in class Bindable
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:34: error: incompatible types: int cannot be converted to Double
+        volume.setMinValue(0);
+                           ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:35: error: incompatible types: int cannot be converted to Double
+        volume.setMaxValue(1);
+                           ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:37: error: incompatible types: int cannot be converted to Double
+        balance.setMinValue(-1);
+                            ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:38: error: incompatible types: int cannot be converted to Double
+        balance.setMaxValue(1);
+                            ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:40: error: method setDefault in class Bindable<T> cannot be applied to given types;
+        frequency.setDefault(1);
+                 ^
+  required: no arguments
+  found:    int
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in class Bindable
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:41: error: method setDefault in class Bindable<T> cannot be applied to given types;
+        tempo.setDefault(1);
+             ^
+  required: no arguments
+  found:    int
+  reason: actual and formal argument lists differ in length
+  where T is a type-variable:
+    T extends Object declared in class Bindable
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:68: error: cannot infer type arguments for AggregateBindable<>
+                    new AggregateBindable<>(
+                    ^
+  reason: inference variable T has incompatible bounds
+    equality constraints: Double
+    lower bounds: IBindable<Double>
+  where T is a type-variable:
+    T extends Object declared in class AggregateBindable
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:118: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case BALANCE -> balanceAggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:119: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case FREQUENCY -> frequencyAggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:120: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case VOLUME -> volumeAggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:121: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case TEMPO -> tempoAggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:130: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case BALANCE -> balanceAggregate = aggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:131: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case FREQUENCY -> frequencyAggregate = aggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:132: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case VOLUME -> volumeAggregate = aggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:133: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case TEMPO -> tempoAggregate = aggregate;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:139: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case BALANCE -> balance;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:140: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case FREQUENCY -> frequency;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:141: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case VOLUME -> volume;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:142: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case TEMPO -> tempo;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:150: error: an enum switch case label must be the unqualified name of an enumeration constant
+            case BALANCE -> Double::sum;
+                 ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:133: error: incompatible types: Bindable<Object> cannot be converted to BindableDouble
+        BindableDouble bindable = (BindableDouble) getOriginalBindable(lookup);
+                                                                      ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:158: error: incompatible types: Bindable<Object> cannot be converted to BindableFloat
+        BindableFloat bindable = (BindableFloat) getOriginalBindable(lookup);
+                                                                    ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:183: error: incompatible types: Bindable<Object> cannot be converted to BindableInt
+        BindableInt bindable = (BindableInt) getOriginalBindable(lookup);
+                                                                ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:206: error: incompatible types: Bindable<Object> cannot be converted to BindableLong
+        BindableLong bindable = (BindableLong) getOriginalBindable(lookup);
+                                                                  ^
+/run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:229: error: incompatible types: Bindable<Object> cannot be converted to BindableBool
+        BindableBool bindable = (BindableBool) getOriginalBindable(lookup);
+                                                                  ^
+Note: /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/bindables/Bindable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+36 errors
+> Task :compileJava FAILED
+[Incubating] Problems report is available at: file:///run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:33: error: method setDefault in class Bindable<T> cannot be applied to given types;
+          volume.setDefault(1.0);
+                ^
+    required: no arguments
+    found:    double
+    reason: actual and formal argument lists differ in length
+    where T is a type-variable:
+      T extends Object declared in class Bindable
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:40: error: method setDefault in class Bindable<T> cannot be applied to given types;
+          frequency.setDefault(1);
+                   ^
+    required: no arguments
+    found:    int
+    reason: actual and formal argument lists differ in length
+    where T is a type-variable:
+      T extends Object declared in class Bindable
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:41: error: method setDefault in class Bindable<T> cannot be applied to given types;
+          tempo.setDefault(1);
+               ^
+    required: no arguments
+    found:    int
+    reason: actual and formal argument lists differ in length
+    where T is a type-variable:
+      T extends Object declared in class Bindable
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:167: error: getTempo() in AudioAdjustments cannot implement getTempo() in IAdjustableAudioComponent
+      public BindableDouble getTempo() {
+                            ^
+    return type BindableDouble is not compatible with BindableNumber<Double>
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:163: error: getFrequency() in AudioAdjustments cannot implement getFrequency() in IAdjustableAudioComponent
+      public BindableDouble getFrequency() {
+                            ^
+    return type BindableDouble is not compatible with BindableNumber<Double>
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:159: error: getBalance() in AudioAdjustments cannot implement getBalance() in IAdjustableAudioComponent
+      public BindableDouble getBalance() {
+                            ^
+    return type BindableDouble is not compatible with BindableNumber<Double>
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:155: error: getVolume() in AudioAdjustments cannot implement getVolume() in IAdjustableAudioComponent
+      public BindableDouble getVolume() {
+                            ^
+    return type BindableDouble is not compatible with BindableNumber<Double>
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:114: error: getAggregate(AdjustableProperty) in AudioAdjustments cannot implement getAggregate(AdjustableProperty) in IAggregateAudioAdjustment
+      private AggregateBindable<Double> getAggregate(
+                                        ^
+    attempting to assign weaker access privileges; was public
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:7: error: AudioAdjustments is not abstract and does not override abstract method getTempo() in IAdjustableAudioComponent
+  public class AudioAdjustments implements IAdjustableAudioComponent {
+         ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:44: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+          return getAdjustments().getVolume();
+                                           ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:49: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+          return getAdjustments().getBalance();
+                                            ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:54: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+          return getAdjustments().getFrequency();
+                                              ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AdjustableAudioComponent.java:59: error: incompatible types: BindableDouble cannot be converted to BindableNumber<Double>
+          return getAdjustments().getTempo();
+                                          ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:34: error: incompatible types: int cannot be converted to Double
+          volume.setMinValue(0);
+                             ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:35: error: incompatible types: int cannot be converted to Double
+          volume.setMaxValue(1);
+                             ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:37: error: incompatible types: int cannot be converted to Double
+          balance.setMinValue(-1);
+                              ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:38: error: incompatible types: int cannot be converted to Double
+          balance.setMaxValue(1);
+                              ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:133: error: incompatible types: Bindable<Object> cannot be converted to BindableDouble
+          BindableDouble bindable = (BindableDouble) getOriginalBindable(lookup);
+                                                                        ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:158: error: incompatible types: Bindable<Object> cannot be converted to BindableFloat
+          BindableFloat bindable = (BindableFloat) getOriginalBindable(lookup);
+                                                                      ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:183: error: incompatible types: Bindable<Object> cannot be converted to BindableInt
+          BindableInt bindable = (BindableInt) getOriginalBindable(lookup);
+                                                                  ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:206: error: incompatible types: Bindable<Object> cannot be converted to BindableLong
+          BindableLong bindable = (BindableLong) getOriginalBindable(lookup);
+                                                                    ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/configuration/ConfigManager.java:229: error: incompatible types: Bindable<Object> cannot be converted to BindableBool
+          BindableBool bindable = (BindableBool) getOriginalBindable(lookup);
+                                                                    ^
+  Note: /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/bindables/Bindable.java uses unchecked or unsafe operations.
+  Note: Recompile with -Xlint:unchecked for details.
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:118: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case BALANCE -> balanceAggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:119: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case FREQUENCY -> frequencyAggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:120: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case VOLUME -> volumeAggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:121: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case TEMPO -> tempoAggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:130: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case BALANCE -> balanceAggregate = aggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:131: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case FREQUENCY -> frequencyAggregate = aggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:132: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case VOLUME -> volumeAggregate = aggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:133: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case TEMPO -> tempoAggregate = aggregate;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:139: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case BALANCE -> balance;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:140: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case FREQUENCY -> frequency;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:141: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case VOLUME -> volume;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:142: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case TEMPO -> tempo;
+                   ^
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:150: error: an enum switch case label must be the unqualified name of an enumeration constant
+              case BALANCE -> Double::sum;
+                   ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  /run/media/ben/cf692416-ba3e-4888-9816-0102d8795a3a/josuframework/src/main/java/osu/framework/audio/AudioAdjustments.java:68: error: cannot infer type arguments for AggregateBindable<>
+                      new AggregateBindable<>(
+                      ^
+    reason: inference variable T has incompatible bounds
+      equality constraints: Double
+      lower bounds: IBindable<Double>
+    where T is a type-variable:
+      T extends Object declared in class AggregateBindable
+  36 errors
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+BUILD FAILED in 9s
+1 actionable task: 1 executed

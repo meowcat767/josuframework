@@ -130,7 +130,7 @@ public abstract class ConfigManager<TLookup extends Enum<TLookup>> implements IC
     protected BindableDouble setDefault(TLookup lookup, double value, Double min, Double max, Double precision) {
         value = getDefault(lookup, value);
 
-        BindableDouble bindable = (BindableDouble) getOriginalBindable(lookup);
+        BindableDouble bindable = (BindableDouble) (Bindable<?>) getOriginalBindable(lookup);
         if (bindable == null) {
             bindable = new BindableDouble(value);
             addBindable(lookup, bindable);
@@ -155,7 +155,7 @@ public abstract class ConfigManager<TLookup extends Enum<TLookup>> implements IC
     protected BindableFloat setDefault(TLookup lookup, float value, Float min, Float max, Float precision) {
         value = getDefault(lookup, value);
 
-        BindableFloat bindable = (BindableFloat) getOriginalBindable(lookup);
+        BindableFloat bindable = (BindableFloat) (Bindable<?>) getOriginalBindable(lookup);
         if (bindable == null) {
             bindable = new BindableFloat(value);
             addBindable(lookup, bindable);
@@ -180,7 +180,7 @@ public abstract class ConfigManager<TLookup extends Enum<TLookup>> implements IC
     protected BindableInt setDefault(TLookup lookup, int value, Integer min, Integer max) {
         value = getDefault(lookup, value);
 
-        BindableInt bindable = (BindableInt) getOriginalBindable(lookup);
+        BindableInt bindable = (BindableInt) (Bindable<?>) getOriginalBindable(lookup);
         if (bindable == null) {
             bindable = new BindableInt(value);
             addBindable(lookup, bindable);
@@ -203,7 +203,7 @@ public abstract class ConfigManager<TLookup extends Enum<TLookup>> implements IC
     protected BindableLong setDefault(TLookup lookup, long value, Long min, Long max) {
         value = getDefault(lookup, value);
 
-        BindableLong bindable = (BindableLong) getOriginalBindable(lookup);
+        BindableLong bindable = (BindableLong) (Bindable<?>) getOriginalBindable(lookup);
         if (bindable == null) {
             bindable = new BindableLong(value);
             addBindable(lookup, bindable);
@@ -226,7 +226,7 @@ public abstract class ConfigManager<TLookup extends Enum<TLookup>> implements IC
     protected BindableBool setDefault(TLookup lookup, boolean value) {
         value = getDefault(lookup, value);
 
-        BindableBool bindable = (BindableBool) getOriginalBindable(lookup);
+        BindableBool bindable = (BindableBool) (Bindable<?>) getOriginalBindable(lookup);
         if (bindable == null) {
             bindable = new BindableBool(value);
             addBindable(lookup, bindable);
