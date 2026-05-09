@@ -42,4 +42,14 @@ public class CompositeDrawable extends Drawable {
             }
         }
     }
+
+    @Override
+    public void Draw() {
+        super.Draw();
+        for (Drawable child : new ArrayList<>(internalChildren)) {
+            if (child.isAlive) {
+                child.Draw();
+            }
+        }
+    }
 }

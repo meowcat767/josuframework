@@ -23,6 +23,10 @@ public class Drawable extends Transformable implements IDependencyInjectionCandi
         updateTransforms();
     }
 
+    public void Draw() {
+        // Base implementation
+    }
+
     public void load(osu.framework.allocation.DependencyContainer dependencies) {
         dependencies.inject(this);
         isLoaded = true;

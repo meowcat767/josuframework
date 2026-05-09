@@ -17,6 +17,7 @@ public class Game extends Container {
     public void Update() {
         scheduler.update();
         super.Update();
+        Draw();
     }
 
     public void Run() {

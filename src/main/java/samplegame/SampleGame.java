@@ -34,7 +34,6 @@ public class SampleGame extends Game {
         super.Update();
         if (box != null) {
             // box.rotation += (float) Time.Elapsed / 10;
-            System.out.println("Box Rotation: " + box.rotation);
         }
     }
 
