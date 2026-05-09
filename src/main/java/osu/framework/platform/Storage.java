@@ -74,6 +74,10 @@ public abstract class Storage {
         return getFullPath(path, false);
     }
 
+    public Path getPath(String path) {
+        return getFullPath(path, true);
+    }
+
     public abstract boolean exists(String path);
 
     public abstract boolean existsDirectory(
