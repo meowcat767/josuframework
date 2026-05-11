@@ -18,4 +18,5 @@ the osu!framework.
    development
    lists
    logging
+   math
 
