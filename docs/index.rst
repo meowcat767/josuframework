@@ -11,6 +11,7 @@ josuFramework
    bindables
    caching
    configuration
+   development
 
 
 Welcome to josuFramework's documentation!
