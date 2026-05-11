@@ -20,4 +20,7 @@ the osu!framework.
    logging
    math
    platform
+   threading
+   timing
+   game
 
