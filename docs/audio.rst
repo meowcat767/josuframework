@@ -71,7 +71,24 @@ Samples also have a ``playbackConcurrency`` setting to limit how many instances 
 Audio Mixing
 ------------
 
-The ``AudioMixer`` (``IAudioMixer``) allows grouping multiple audio channels together. Adjustments applied to a mixer are automatically propagated to all channels added to it.
+The ``AudioMixer`` (IAudioMixer) combines audio from multiple ``IAudioChannel`` instances into a single output stream.
+
+Each channel provides PCM sample data via:
+
+.. code-block:: java
+   for (IAudioChannel channel : channels) {
+    channel.read(tempBuffer, 0, length);
+
+    for (int i = 0; i < length; i++) {
+        output[i] += tempBuffer[i];
+    }
+}
+
+Adjustments suck as volume, balance, frequency and temp are propagated through the mixer hierarchy using AdjustableAudioComponent.
+
+Mixer adjustments
+
+Adjustments applied to a mixer affect all channels attached to it.
 
 .. code-block:: java
 
@@ -79,7 +96,31 @@ The ``AudioMixer`` (``IAudioMixer``) allows grouping multiple audio channels tog
     sfxMixer.getVolume().setValue(0.7);
 
     ISampleChannel channel = sample.play();
-    sfxMixer.add(channel); // The channel's volume will now be affected by the mixer's volume.
+    sfxMixer.add(channel);
+
+The final playback volume of the channel will include both:
+
+- the channel's own volume
+- the mixer's aggregate volume
+
+Clipping
+~~~~~~~~
+
+Because audio samples are summed together, mixed output may exceed the valid sample range.
+
+Implementations should clamp output values:
+
+.. code-block:: java
+
+    sample = Math.max(-1.0f, Math.min(1.0f, sample));
+
+Threading
+~~~~~~~~~
+
+Mixers are expected to operate on the dedicated audio thread. Channel modifications should avoid concurrent modification during rendering.
+
+The current implementation uses a simplified update model and may evolve toward a lock-free or command-queue-based audio pipeline in future versions.
+
 
 Implementation Details
 ----------------------
