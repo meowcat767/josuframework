@@ -16,4 +16,5 @@ the osu!framework.
    caching
    configuration
    development
+   lists
 
