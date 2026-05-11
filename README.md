@@ -1,5 +1,6 @@
 # jOsuFramework
 *A modern port of the [osu!framework](https://github.com/ppy/osu-framework)*
+**jOF is still being ported, and is not ready for production use.**
 
 ## Developing the game with jOF.
 jOF behaves (for the most part) like the C# based osu!framework. Once the base of jOF has been finished, a Wiki will be created.
