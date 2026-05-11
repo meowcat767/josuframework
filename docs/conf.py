@@ -1,5 +1,6 @@
 html_theme_options = {
-    project = 'JosuFramework'
+    'project': 'JosuFramework'
+    'html_theme': 'sphinx_rtd_theme'
     'logo_only': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
