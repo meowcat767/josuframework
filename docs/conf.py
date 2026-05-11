@@ -1,4 +1,6 @@
 project = 'JosuFramework'
+copyright = '2026, JosuFramework'
+author = 'JosuFramework'
 
 html_theme = 'sphinx_rtd_theme'
 
@@ -7,7 +9,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
+    # 'style_nav_header_background': 'white',
     'flyout_display': 'hidden',
     'version_selector': True,
     'language_selector': True,
