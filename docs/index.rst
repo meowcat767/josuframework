@@ -19,4 +19,5 @@ the osu!framework.
    lists
    logging
    math
+   platform
 
