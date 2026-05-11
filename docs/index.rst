@@ -1,4 +1,4 @@
-JosuFramework
+josuFramework
 =============
 
 Welcome to JosuFramework's documentation!

@@ -1,4 +1,5 @@
 html_theme_options = {
+    project = 'JosuFramework'
     'logo_only': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
