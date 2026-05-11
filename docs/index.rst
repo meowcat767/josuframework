@@ -7,6 +7,7 @@ josuFramework
 
    gettingstarted
    bindables
+   audio
 
 Welcome to josuFramework's documentation!
 =========================================
