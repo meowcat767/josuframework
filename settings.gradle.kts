@@ -1,1 +1,1 @@
-rootProject.name = "osu-framework-java"
+rootProject.name = "jOsuFramework"

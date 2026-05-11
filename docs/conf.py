@@ -1,6 +1,9 @@
-project = 'JosuFramework'
-copyright = '2026, JosuFramework'
-author = 'JosuFramework'
+project = 'jOsuFramework'
+copyright = '2026, jOsuFramework'
+author = 'jOsuFramework'
+
+version = '0.1.0'
+release = '0.1.0'
 
 html_theme = 'sphinx_rtd_theme'
 
@@ -21,3 +24,15 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False,
 }
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+# -- Options for HTML output -------------------------------------------------
+
+# The name for this set of Sphinx documents.
+# "<project> v<release> documentation" by default.
+html_title = 'jOsuFramework'
+
+# A shorter title for the navigation bar.  Default is the same as html_title.
+html_short_title = 'jOsuFramework'
