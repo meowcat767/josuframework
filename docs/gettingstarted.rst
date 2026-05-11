@@ -1,12 +1,13 @@
+==============================
 josuFramework - Getting Started
-=============
+==============================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Getting Started:
 
 Setting up josuFramework for making a game.
-=========================================
+===========================================
 josuFramework is deployed to JitPack.
 
 Gradle
