@@ -7,6 +7,7 @@ the osu!framework.
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents:
+   :glob:
 
    gettingstarted
    audio

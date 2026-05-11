@@ -1,6 +1,5 @@
-==================================
 josuFramework - Configuration
-==================================
+==============================
 
 The configuration system in josuFramework provides a robust way to manage, persist, and track changes to application settings. It is built upon the ``Bindable`` system, ensuring that changes to configuration are automatically propagated to all interested components.
 
