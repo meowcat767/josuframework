@@ -12,6 +12,18 @@ public class Drawable extends Transformable implements IDependencyInjectionCandi
     public Color4 colour = Color4.Tomato; // Default?
     public float rotation;
 
+    public float getAlpha() {
+        return colour.a;
+    }
+
+    public void setAlpha(float alpha) {
+        colour.a = alpha;
+    }
+
+    public void setAlpha(double alpha) {
+        setAlpha((float) alpha);
+    }
+
     public CompositeDrawable parent;
     public float depth;
     public boolean isAlive = true;

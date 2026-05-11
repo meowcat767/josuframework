@@ -24,8 +24,8 @@ public abstract class AudioMixer
         if (channel.getMixer() == this)
             return;
 
-        if (channel.getMixer() != null)
-            channel.getMixer().remove(channel, false);
+        if (channel.getMixer() != null && channel.getMixer() instanceof AudioMixer)
+            ((AudioMixer) channel.getMixer()).remove(channel, false);
 
         addInternal(channel);
 
