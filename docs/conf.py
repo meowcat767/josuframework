@@ -1,3 +1,9 @@
+import sphinx_rtd_theme
+import os
+import sys
+
+# -- Project information -----------------------------------------------------
+
 project = 'jOsuFramework'
 copyright = '2026, jOsuFramework'
 author = 'jOsuFramework'
@@ -5,7 +11,19 @@ author = 'jOsuFramework'
 version = '0.1.0'
 release = '0.1.0'
 
+# -- General configuration ---------------------------------------------------
+
+extensions = [
+    'sphinx_rtd_theme',
+]
+
+templates_path = ['_templates']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+# -- Options for HTML output -------------------------------------------------
+
 html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 html_theme_options = {
     'logo_only': False,
@@ -25,10 +43,13 @@ html_theme_options = {
     'titles_only': False,
 }
 
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
-
-# -- Options for HTML output -------------------------------------------------
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
