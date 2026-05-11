@@ -6,6 +6,7 @@ josuFramework
    :caption: josuFramework:
 
    gettingstarted
+   bindables
 
 Welcome to josuFramework's documentation!
 =========================================
