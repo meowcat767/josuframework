@@ -8,8 +8,9 @@ josuFramework
    gettingstarted
    audio
    allocation
-   caching
    bindables
+   caching
+   configuration
 
 
 Welcome to josuFramework's documentation!
