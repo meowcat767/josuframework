@@ -8,6 +8,7 @@ josuFramework
    gettingstarted
    bindables
    audio
+   allocation
 
 Welcome to josuFramework's documentation!
 =========================================

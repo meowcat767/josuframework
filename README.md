@@ -4,8 +4,10 @@
 **jOF is still being ported, and is not ready for production use.**
 
 ## Developing the game with jOF.
-jOF behaves (for the most part) like the C# based osu!framework. Once the base of jOF has been finished, a Wiki will be created.
+jOF behaves (for the most part) like the C# based osu!framework.
 
+## Documentation
+Documentation can be found at [https://docs.meowcat.site](https://docs.meowcat.site)
 ## Objectives
 This port is intended as a direct, almost 1:1 port of the C# based osu!framework. It is interoperable with Kotlin and Groovy, Scala and other JVM languages.
 
