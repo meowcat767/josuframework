@@ -13,7 +13,7 @@ josuFramework is deployed to JitPack.
 Gradle
 -----------
 
-```gradle
+```
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
@@ -26,7 +26,7 @@ Add this to your root settings.gradle at the end of repositories.
 
 Add the dependency:
 
-```gradle
+```
 	dependencies {
 	        implementation 'com.github.meowcat767:josuframework:Tag'
 	}
@@ -39,7 +39,7 @@ Maven
 
 Add the repository to your pom.xml:
 
-```xml
+```
 	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -50,7 +50,7 @@ Add the repository to your pom.xml:
 
 Now add the dependency:
 
-```xml
+```
 	<dependency>
 	    <groupId>com.github.meowcat767</groupId>
 	    <artifactId>josuframework</artifactId>
