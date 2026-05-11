@@ -8,6 +8,7 @@ josuFramework
    gettingstarted
    audio
    allocation
+   caching
    bindables
 
 

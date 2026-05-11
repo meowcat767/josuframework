@@ -4,9 +4,9 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'jOsuFramework'
-copyright = '2026, jOsuFramework'
-author = 'jOsuFramework'
+project = 'josuFramework'
+copyright = '2026, meowcat767. osu! is a trademark of ppy Pty Ltd.'
+author = 'meowcat767, ppy Pty Ltd, the osu! community'
 
 version = '0.1.0'
 release = '0.1.0'
@@ -54,7 +54,7 @@ pygments_style = 'sphinx'
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-html_title = 'jOsuFramework'
+html_title = 'josuFramework'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'jOsuFramework'
+html_short_title = 'josuFramework'
