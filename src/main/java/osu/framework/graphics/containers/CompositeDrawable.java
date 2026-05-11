@@ -1,12 +1,16 @@
 package osu.framework.graphics.containers;
 
 import osu.framework.graphics.Drawable;
+import osu.framework.threading.Scheduler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class CompositeDrawable extends Drawable {
+    public static final Scheduler SCHEDULER_STANDARD = new Scheduler();
+    public static final Scheduler SCHEDULER_LONG_LOAD = new Scheduler();
+
     protected final List<Drawable> internalChildren = new ArrayList<>();
 
     protected void addInternal(Drawable drawable) {

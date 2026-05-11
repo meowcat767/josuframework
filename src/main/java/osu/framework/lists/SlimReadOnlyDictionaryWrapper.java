@@ -57,4 +57,8 @@ public final class SlimReadOnlyDictionaryWrapper<TKey, TValue> {
         value.value = dict.get(key);
         return true;
     }
+
+    public static class Holder<T> {
+        public T value;
+    }
 }

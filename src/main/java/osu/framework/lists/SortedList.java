@@ -9,6 +9,11 @@ public class SortedList<T> implements Iterable<T> {
     private final List<T> list;
     private final Comparator<T> comparer;
 
+    private SortedList(Comparator<T> comparer, List<T> list) {
+        this.comparer = comparer;
+        this.list = list;
+    }
+
     /**
      * Uses natural ordering.
      */
@@ -20,7 +25,7 @@ public class SortedList<T> implements Iterable<T> {
      * Uses custom comparison function.
      */
     public SortedList(BiFunction<T, T, Integer> comparerFunc) {
-        this((a, b) -> comparerFunc.apply(a, b));
+        this((Comparator<T>) (a, b) -> comparerFunc.apply(a, b));
     }
 
     /**

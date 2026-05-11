@@ -19,6 +19,14 @@ public class Drawable extends Transformable implements IDependencyInjectionCandi
     // Simplified LoadState
     public boolean isLoaded;
 
+    public LoadState getLoadState() {
+        return isLoaded ? LoadState.LOADED : LoadState.NOT_LOADED;
+    }
+
+    public Thread getLoadThread() {
+        return null; // Implementation missing in simplified version
+    }
+
     public void Update() {
         updateTransforms();
     }

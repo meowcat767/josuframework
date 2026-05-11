@@ -53,7 +53,7 @@ final class LoadingComponentsLogger {
             loadingComponents.stream()
                     .sorted(
                             Comparator
-                                    .comparing(
+                                    .<Drawable, String>comparing(
                                             c -> {
                                                 Thread t = c.getLoadThread();
                                                 return t != null

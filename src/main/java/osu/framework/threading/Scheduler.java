@@ -46,6 +46,10 @@ public class Scheduler {
         }
     }
 
+    public String getStatusString() {
+        return "Scheduler status: " + runQueue.size() + " queued, " + timedTasks.size() + " timed";
+    }
+
     private static class ScheduledTask {
         Runnable task;
         double executionTime;
