@@ -6,9 +6,10 @@ josuFramework
    :caption: josuFramework:
 
    gettingstarted
-   bindables
    audio
    allocation
+   bindables
+
 
 Welcome to josuFramework's documentation!
 =========================================
