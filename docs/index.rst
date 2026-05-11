@@ -17,4 +17,5 @@ the osu!framework.
    configuration
    development
    lists
+   logging
 
