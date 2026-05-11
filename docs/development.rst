@@ -1,5 +1,5 @@
 josuFramework - Development
-==============================
+===========================
 
 josuFramework provides several utility classes to assist during development and testing, primarily located in the ``osu.framework.development`` package.
 

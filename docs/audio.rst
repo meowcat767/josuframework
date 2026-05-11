@@ -1,5 +1,5 @@
 josuFramework - Audio
-==============================
+=====================
 
 The audio system in josuFramework is designed to be flexible, thread-safe, and highly adjustable. Most audio components inherit from ``AdjustableAudioComponent``, which provides built-in support for volume, balance, frequency, and tempo adjustments.
 

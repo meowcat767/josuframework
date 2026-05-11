@@ -1,5 +1,5 @@
 josuFramework - Allocation
-==============================
+==========================
 
 The allocation system in josuFramework provides a robust dependency injection (DI) framework, inspired by the osu!framework. It allows components to share and resolve dependencies through a hierarchical container system.
 

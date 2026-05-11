@@ -1,8 +1,8 @@
 josuFramework - Getting Started
-==============================
+===============================
 
 Setting up josuFramework for making a game.
-===========================================
+
 josuFramework is deployed to JitPack.
 
 Gradle

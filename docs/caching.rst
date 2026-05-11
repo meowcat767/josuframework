@@ -1,5 +1,5 @@
 josuFramework - Caching
-==============================
+=======================
 
 The caching system in josuFramework provides a simple and lightweight way to track the validity of expensive calculations or state-dependent values. The core component is the ``Cached`` class (found in ``osu.framework.caching``).
 

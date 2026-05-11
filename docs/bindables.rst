@@ -1,5 +1,5 @@
 josuFramework - Bindables
-==============================
+=========================
 
 josuFramework utilizes ``Bindable<T>`` objects to distribute data between components. In conjunction with ``Drawable`` components,
 they provide functionality to automatically remove communication between ``Bindable<T>`` objects when finalized.
