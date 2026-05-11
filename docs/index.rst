@@ -5,5 +5,5 @@ jOsuFramework
    :maxdepth: 2
    :caption: Contents:
 
-Welcome to JosuFramework's documentation!
+Welcome to jOsuFramework's documentation!
 =========================================

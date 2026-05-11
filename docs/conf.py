@@ -13,6 +13,8 @@ release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
 
+master_doc = 'index'
+
 extensions = [
     'sphinx_rtd_theme',
 ]
@@ -23,7 +25,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 html_theme_options = {
     'logo_only': False,
