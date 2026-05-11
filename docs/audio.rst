@@ -121,8 +121,3 @@ Mixers are expected to operate on the dedicated audio thread. Channel modificati
 
 The current implementation uses a simplified update model and may evolve toward a lock-free or command-queue-based audio pipeline in future versions.
 
-
-Implementation Details
-----------------------
-
-While the API is mostly stable, the underlying implementation currently uses a simplified model. Proper threading and native audio backend (e.g., BASS) integration are planned for future updates.
