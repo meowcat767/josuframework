@@ -25,3 +25,5 @@ Before starting, please make sure you are familiar with the codebase, and the de
 ## Licence
 This framework is licensed under the MIT licence. Please see the licence file for more information. 
 tl;dr you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+
+*No LLMs were used in the porting/development of the framework.*
