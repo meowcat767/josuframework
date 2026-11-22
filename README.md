@@ -7,7 +7,7 @@
 jOF behaves (for the most part) like the C# based osu!framework.
 
 ## Documentation
-Documentation can be found at [https://docs.meowcat.site](https://docs.meowcat.site)
+Documentation can be found at [https://jof-doc.meowcats.space](https://jof-doc.meowcats.space)
 
 To generate the Java API reference locally, install [Doxygen](https://www.doxygen.nl/download.html) and run `doxygen Doxyfile` from the repository root. Open `docs/generated/index.html` in a browser. This is separate from the Sphinx guides in `docs/`.
 
