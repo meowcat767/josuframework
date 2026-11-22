@@ -1,0 +1,25 @@
+var classosu_1_1framework_1_1platform_1_1_storage =
+[
+    [ "Storage", "classosu_1_1framework_1_1platform_1_1_storage.html#a1813ececa7d3edd07877b39ffd6d43fa", null ],
+    [ "Storage", "classosu_1_1framework_1_1platform_1_1_storage.html#a46867e3eb37483251acad11354316e86", null ],
+    [ "createFileSafely", "classosu_1_1framework_1_1platform_1_1_storage.html#a150ef1886917b2b81aa5e1ff8257e994", null ],
+    [ "delete", "classosu_1_1framework_1_1platform_1_1_storage.html#a7542032578d687d4303c63498c4fab02", null ],
+    [ "deleteDirectory", "classosu_1_1framework_1_1platform_1_1_storage.html#a83f1a1b5169fab02dfd3d3948195e66b", null ],
+    [ "exists", "classosu_1_1framework_1_1platform_1_1_storage.html#a9f6df03473d8914de5606c3eabfce1bd", null ],
+    [ "existsDirectory", "classosu_1_1framework_1_1platform_1_1_storage.html#aa60e75c9699011cf7b11783f7a09637b", null ],
+    [ "getBasePath", "classosu_1_1framework_1_1platform_1_1_storage.html#a91f8915bb3397b8920c896cfbc030609", null ],
+    [ "getDirectories", "classosu_1_1framework_1_1platform_1_1_storage.html#aae17c9ac58ce1a4b9e92d3a4c0067d98", null ],
+    [ "getFiles", "classosu_1_1framework_1_1platform_1_1_storage.html#a4190bb9c7402b381a76f27c85b80bb0e", null ],
+    [ "getFiles", "classosu_1_1framework_1_1platform_1_1_storage.html#a540e74f0825c67a9582b2680363ceab7", null ],
+    [ "getFullPath", "classosu_1_1framework_1_1platform_1_1_storage.html#acb17225c0aa3507974a070fbeed2a0c0", null ],
+    [ "getFullPath", "classosu_1_1framework_1_1platform_1_1_storage.html#aaca20177e3b1ff8cbf461f24b596e4fc", null ],
+    [ "getInputStream", "classosu_1_1framework_1_1platform_1_1_storage.html#ab148b9dec59fdc1894651c6cb8f9add7", null ],
+    [ "getOutputStream", "classosu_1_1framework_1_1platform_1_1_storage.html#a2b853f0daa5fd617933353bdee424810", null ],
+    [ "getPath", "classosu_1_1framework_1_1platform_1_1_storage.html#a354d5936bf38d64a81ac2300dfba4df6", null ],
+    [ "getStorageForDirectory", "classosu_1_1framework_1_1platform_1_1_storage.html#a8795e3a3dce1404130ec4600d00beb87", null ],
+    [ "move", "classosu_1_1framework_1_1platform_1_1_storage.html#ab02db9243e53e146c0fc3d307fcec301", null ],
+    [ "openFileExternally", "classosu_1_1framework_1_1platform_1_1_storage.html#ab88e7582a708451e60addc480fedc1f6", null ],
+    [ "presentExternally", "classosu_1_1framework_1_1platform_1_1_storage.html#a11d0c0397ee48cd9dd1642c430006c9d", null ],
+    [ "presentFileExternally", "classosu_1_1framework_1_1platform_1_1_storage.html#a40659a04c0b191e34ce157f9d98c7a84", null ],
+    [ "basePath", "classosu_1_1framework_1_1platform_1_1_storage.html#a94ebb4791b1bc3e34ffde48176d3c1cb", null ]
+];

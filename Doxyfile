@@ -1,9 +1,10 @@
 PROJECT_NAME           = josuFramework
-OUTPUT_DIRECTORY       = build/doxygen
+OUTPUT_DIRECTORY       = docs/generated
 INPUT                  = src/main/java/osu/framework
 FILE_PATTERNS          = *.java
 RECURSIVE              = YES
 EXTRACT_ALL            = YES
 GENERATE_HTML          = YES
+HTML_OUTPUT            = .
 GENERATE_LATEX         = NO
 QUIET                  = YES

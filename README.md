@@ -3,20 +3,20 @@
 
 **jOF is still being ported, and is not ready for production use.**
 
-## Developing the game with jOF.
+## Developing a game with jOF.
 jOF behaves (for the most part) like the C# based osu!framework.
 
 ## Documentation
 Documentation can be found at [https://docs.meowcat.site](https://docs.meowcat.site)
 
-To generate the Java API reference locally, install [Doxygen](https://www.doxygen.nl/download.html), ensure the `build` directory exists, and run `doxygen Doxyfile` from the repository root. Open `build/doxygen/html/index.html` in a browser. This is separate from the Sphinx guides in `docs/`.
+To generate the Java API reference locally, install [Doxygen](https://www.doxygen.nl/download.html) and run `doxygen Doxyfile` from the repository root. Open `docs/generated/index.html` in a browser. This is separate from the Sphinx guides in `docs/`.
 
 ## Objectives
 This port is intended as a direct, almost 1:1 port of the C# based osu!framework. It is interoperable with Kotlin and Groovy, Scala and other JVM languages.
 
 ## Requirements
 - A [JDK](https://adoptium.net/en-GB)
-- [Gradle](https://gradle.org/) (or a build system of your choice, like Maven or Ant).
+- [Gradle](https://gradle.org/)
 - A Java IDE (I recommend [IntelliJ IDEA](https://www.jetbrains.com/idea/))
 
 ## Building
